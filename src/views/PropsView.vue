@@ -19,13 +19,12 @@
 </style>
 <script setup lang="ts">
 import { createApp, provide, ref } from 'vue'
+import { nameKey } from '@/type/injectionKeys'
 import ChildView from '@/views/ChildView.vue'
 import ChildView2 from '@/views/ChildView2.vue'
 import ChildView3 from '@/views/ChildView3.vue'
 import ChildView4 from '@/views/ChildView4.vue'
-import { nameKey } from '@/type/injectionKeys'
 import ChildView5 from '@/views/ChildView5.vue'
-import vue from '@vitejs/plugin-vue'
 
 provide(nameKey, () => {
   console.log('provide')
